@@ -1,0 +1,1760 @@
+@import url('https://fonts.googleleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Spartan',sans-serif;
+}
+
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1{
+    font-size:50px;
+    line-height:64px;
+    color:#222;
+}
+
+h2{
+    font-size:46px;
+    line-height:54px;
+    color:#222;
+}
+
+h4{
+    font-size:20px;
+    color:#222;
+}
+
+h6{
+    font-size:12px;
+    font-weight:700;
+}
+
+p{
+    font-size:16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+    padding:40px 50px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+
+body{
+    width:100%;
+}
+
+/* ----------------------header & navigation bar ---------------------------- */
+
+section a img{
+    height:50px;
+    width:70px;
+}
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:10px 80px;
+    background:#e3e6f3;
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.06) ;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#navbar{
+    display:flex;
+    align-items:space-between;
+}
+
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    position:relative;
+}
+
+#navbar li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:#1a1a1a;
+    transition:0.5 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background:#088178;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+
+#mobile{
+    display:none;
+}
+
+#close{
+    display:none;
+}
+
+/* ---------------------------------- Hero page -------------------------------- */
+
+#hero{
+    background-image:url("images/img24.jpg");
+    background-color: #006875;
+    height:150vh;
+    width:100%;
+    background-size:cover;
+    background-position: 0% 20% ;
+    padding:80px 250px;
+}
+
+#hero h1{
+    color:#088178;
+}
+
+#hero button {
+    height:30px;
+    width:100px;
+    border:none;
+    color:white;
+    background-color: orange;
+    padding:10px 10px;
+}
+
+/* ---------------------------------- feature -------------------------- */
+
+#feature{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+#feature .fe-div{
+    height:200px;
+    width:200px;
+    border:1px solid #cce7d0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.4);
+    border-radius:4px;
+}
+
+#feature .fe-div:hover{
+    box-shadow:10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature img{
+    width:100%;
+    height:150px;
+    padding:10px 10px;
+}
+
+#feature .fe-div h6{
+    margin-top:10px;
+    padding:0 20px;
+    border-radius:4px;
+    color:#088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-div:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+
+#feature .fe-div:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+#feature .fe-div:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+/* ---------------------------------- product1 --------------------------- */
+
+#product1 h2{
+    text-align:center;
+}
+
+#product1 p{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap:wrap;
+}
+
+#product1 .pro{
+    width:43%;
+    max-width:250px;
+    padding:10px 12px;
+    border:1px solid #cce7d0;
+    border-radius:25px;
+    cursor:pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.2);
+    margin:15px 0;
+    transition:0.3s ease;
+    position:relative;
+}
+
+#product1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0,0,0,0.5);
+}
+
+#product1 .pro-container .pro img{
+    width:100%;
+    height:230px;
+    border-radius:20px;
+}
+
+#product1 .pro .des{
+    padding:10px 10px;
+}
+
+#product1 .pro .des span{
+    font-size:12px;
+    color:#606063;
+}
+
+#product1 .pro .des h5{
+    font-size:14px;
+    color:#1a1a1a;
+}
+
+#product1 .pro .des i{
+    font-size:12px;
+    color:rgb(243,181,25);
+}
+
+#product1 .pro .des h4{
+    font-size:15px;
+    padding-top:7px;
+    font-weight:700;
+    color:#088178;
+}
+
+#product1 .pro .des a i{
+    font-size:25px;
+    color:#088178;
+    position:absolute;
+    bottom:20px;
+    right:30px;
+}
+
+#product1 .pro .des a i:hover{
+    color:rgb(243,181,25);
+}
+
+/*  ------------------------------ banner ---------------------------- */
+
+#banner{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    background-image: url("images/back-2.jpg");
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    background-position: center;
+}
+
+#banner span{
+    color:rgb(173, 40, 40);
+}
+
+#banner button{
+    background-color: orange;
+    color:white;
+    border-radius:5px;
+    padding:6px 12px;
+    border:1px solid black;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.5);
+    transition:0.4s ease;
+}
+
+#banner button:hover{
+    box-shadow:20px 20px 34px rgba(0,0,0,1);
+    width:10%;
+    cursor:pointer;
+    background-color: #088178;
+}
+
+/* --------------------- Move to top button ----------------------------------- */
+
+.top-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#top-btn{
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    border-radius: 2rem;
+    border: 1.5px solid black;
+}
+
+#top-btn:hover{
+    cursor: pointer;
+}
+
+/* --------------------------------- newsletter ------------------------------- */
+
+#newsletter{
+    width:100%;
+    height:100px;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+    background-color: rgb(35, 35, 123);
+}
+
+#newsletter h4{
+    color:white;
+}
+
+#newsletter p{
+    color:#cce7d0;
+}
+
+#newsletter span{
+    color:rgb(224, 197, 80);
+}
+
+#newsletter form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#newsletter input{
+    height:25px;
+    width:250px;
+    border-radius:6px;
+    border:none;
+    text-align:center;
+}
+
+#newsletter button{
+    height:25px;
+    width:80px;
+    border-radius:6px;
+    border:none;
+    background-color: rgb(235, 165, 43);
+    color:white;
+}
+
+/* --------------------------------------  footer ------------------------------ */
+
+footer .col img{
+    height:50px;
+    width:70px;
+}
+
+footer .col h4,p{
+    font-family:cursive;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:space-evenly;
+    background-color: #b8b8bdfe;
+}
+
+footer .one{
+    display:flex;
+    justify-content:space-between;
+    align-items:space-evenly;
+    flex-wrap:wrap;
+}
+
+footer .two{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px auto;
+    width:300px;
+}
+
+footer .col{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+footer .col h4{
+    margin-bottom:10px;
+}
+
+footer .col a{
+    margin-bottom:9px;
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.692);
+}
+
+footer .col a:hover{
+    text-decoration:underline;
+}
+
+footer p{
+    margin:4px 0 5px 0;
+}
+
+
+/* ---------------------------------  shop page  -------------------------------- */
+
+#shop-hero{
+    background-image: url("images/shop/img1.jpg");
+    height:30vh;
+    width:100%;
+    text-align:center;
+    padding-top:15px;
+}
+
+#shop-hero h2{
+    color:rgb(166, 147, 147);
+}
+
+#shop-hero p{
+    line-height:5px;
+    color:white;
+}
+
+/* next page */
+
+#next-page{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#next-page div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-left:6px;
+    background-color: rgb(45, 147, 155);
+    height:30px;
+    width:30px;
+    padding:4px 10px;
+    color:white;
+    border-radius:5px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+
+#next-page div:hover{
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+}
+
+#next-page a{
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* ---------------------------  sproduct ----------------------------------------- */
+
+#pro-details{
+    display:flex;
+    margin-top:20px;
+    align-items: flex-start;
+}
+
+#pro-details .pro-img{
+    margin-right:50px;
+    width: 40%;
+    padding: 15px;
+    border:1px solid #cce7d0;
+    box-sizing:border-box;
+}
+
+#pro-details .pro-img img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+#pro-details .detail{
+    margin-top:30px;
+    width: 50%;
+}
+
+#pro-details .detail h4{
+    padding:20px 0 20px 0;
+    font-size:25px;
+}
+
+#pro-details .detail h2{
+    font-size:30px;
+}
+
+#pro-details .detail select{
+    display:block;
+    padding:5px 10px;
+    margin-bottom:15px;
+}
+
+#pro-details .detail input{
+    width:50px;
+    height:30px;
+    padding-left:10px;
+    font-size:15px;
+    margin-right:10px;
+    border-radius:5px;
+}
+
+#pro-details .detail input:focus{
+    outline:none;
+}
+
+#pro-details .detail button{
+    height:30px;
+    width:140px;
+    border-radius:5px;
+    background-color:#088178;
+    color:white;
+    border:1px solid black;
+    box-shadow:4px 4px 4px rgba(0,0,0,0.3);
+}
+
+#pro-details .detail span{
+    line-height:25px;
+}
+
+#pro-details .detail button:hover{
+    box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+}
+
+#pro-details .detail span{
+        font-size: 14px;
+    }
+
+/* --------------------------- media query for (max-width 1100px) -------------------------------- */
+
+@media (max-width: 1100px){
+    #pro-details .detail h4{
+        padding:10px 0 10px 0;
+    }
+
+    #pro-details .detail span{
+        font-size: 14px;
+    }
+
+}
+
+/* ----------------------------- media query for (max-width 1000px) ----------------------- */
+
+@media (max-width: 1000px){
+
+    #pro-details .detail .star{
+        font-size: 10px;
+    }
+    #pro-details .detail h4{
+        padding:5px 0 5px 0;
+        font-size: 18px;
+    }
+
+    #pro-details .detail span{
+        font-size: 14px;
+    }
+
+    #pro-details .detail h2{
+        font-size: 20px;
+    }
+
+    #pro-details .detail button{
+        width: 6rem;
+        height: 1.4rem;
+    }
+
+    #pro-details .detail input{
+        width: 3rem;
+        height: 1.4rem;
+    }
+
+    #pro-details .detail span{
+        font-size: 12px;
+    }
+
+}
+
+/* ------------------------------ media query (max-width 900px )------------------------------- */
+
+@media (max-width: 900px){
+    #pro-details .pro-img{
+        margin-top: 30px;
+    }
+}
+
+/* ------------------------------ media query (max-width 850px )------------------------------- */
+
+@media (max-width: 850px){
+    #pro-details .pro-img{
+        margin-top: 40px;
+    }
+}
+
+/* ----------------------------- about us ------------------------------------------*/
+
+#about-heading{
+    width:100%;
+    height:200px;
+    padding-top:40px;
+    text-align:center;
+    background-image: url("images/about/img1.jpg");
+    background-size:cover;
+}
+
+#about-heading h2{
+    color:white;
+}
+
+#about-heading p{
+    color:beige;
+}
+
+/* ----- about details -------- */
+
+#about-details{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:40px 0 20px 0;
+    padding:10px 20px;
+}
+
+#about-details img{
+    width:50%;
+    height:auto;
+}
+
+#about-details .abt-detail{
+    padding-left:30px;
+    padding-right:10px;
+}
+
+#about-details .abt-detail marquee{
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+#about-details .abt-detail p{
+    line-height:25px;
+}
+
+/* ----------------------------------- contact ------------------------------------ */
+
+#contact-head{
+    background-image: url(images/contact/img1.jpg);
+    height:35vh;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:25px;
+}
+
+#contact-head h2{
+    color:orange;
+}
+
+#contact-head h4{
+    color:beige;
+    margin-top:10px;
+}
+
+/* contact detail */
+
+#contact-details{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 40px;
+}
+
+#contact-details .con-detail{
+    flex: 1;
+}
+
+#contact-details p{
+    display:inline-block;
+    padding-left:15px;
+    margin: 8px 0;
+}
+
+#contact-details div{
+    margin-bottom:20px;
+}
+
+#contact-details .map{
+    flex: 1;
+    width:100%;
+    max-width: 600px;
+}
+
+#contact-details .map iframe{
+    width:100%;
+    height: 450px;
+    border: 0;
+}
+
+#contact-details .head-office{
+    font-size:20px;
+    font-weight:800;
+}
+
+#contact-details .con-detail h2{
+    font-size:30px;
+    line-height:40px;
+}
+
+/* --------- media query (max-width 915px ) only for contact page -------------- */
+
+@media (max-width: 915px){
+    #contact-details p{
+        display:inline-block;
+        padding-left:5px;
+        font-size: 14px;
+        margin: 8px 0;
+    }
+}
+
+/* --------- form details -------------- */
+
+#form-details{
+    padding:20px 50px;
+    margin-top:30px;
+}
+
+#form-details form{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:flex-start;
+    border:2px solid rgb(143, 181, 116);
+    padding:20px 30px;
+}
+
+#form-details form h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+#form-details form input{
+    height:35px;
+    width:70%;
+    margin-bottom:20px;
+    border-radius:5px;
+    padding-left:30px;
+    font-size:15px;
+    outline:none;
+    border:1px solid black;
+}
+
+#form-details form textarea{
+    height:150px;
+    width:70%;
+    padding:10px 12px;
+    font-size:15px;
+    border:1px solid black;
+    outline:none;
+}
+
+#form-details form button{
+    margin-top:20px;
+    height:30px;
+    width:100px;
+    border-radius:5px;
+    background-color: #17a89e;
+    color:white;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+    border:1px solid black;
+}
+
+#form-details form button:hover{
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+}
+
+/*  ----------------------- Media query max-width( 868px ) ----------------*/
+
+@media (max-width: 868px){
+    #hero h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    #hero h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    #newsletter{
+        padding: 10px 15px;
+    }
+}
+
+/*  ----------------------- Media query max-width( 799px ) ----------------*/
+
+@media screen and (max-width: 799px){
+
+    #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:fixed;
+    top:0;
+    right:-300px;
+    height:100vh;
+    width:300px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 40px 60px rgba(0,0,0,0.3);
+    padding:80px 0 0 10px;
+    transition:0.3s;
+    }
+
+    #navbar.active{
+        right:0px;
+    }
+
+    #navbar li{
+        margin-bottom:20px;
+    }
+
+    #mobile{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+
+    #mobile i{
+        color:#1a1a1a;
+        font-size:24px;
+        padding-left:20px;
+    }
+
+    #close{
+        display:initial;
+        position:absolute;
+        top:30px;
+        left:30px;
+        color:#222;
+        font-size:24px;
+    }
+
+    #menu{
+        margin-left: 20px;
+    }
+
+    #bag{
+        display:none;
+    }
+
+    #hero {
+        height: 90vh;
+        width: 100%;
+        padding: 50px 150px;
+    }
+
+    #hero h4{
+        font-size: 16px;
+    }
+
+    #hero h2{
+        font-size: 32px;
+    }
+
+    #hero h1{
+        font-size: 38px;
+    }
+
+    #hero p{
+        font-size: 13px;
+    }
+
+    #hero button{
+        height:20px;
+        width:70px;
+        padding:3px 3px 3px 3px;
+    }
+
+    #feature {
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    #feature .fe-div{
+        margin:20px 40px;
+    }
+
+    #product1 .pro-container{
+        justify-content:center;
+    }
+
+    #product1 .pro{
+        margin:10px 15px;
+    }
+
+    /* banner */
+
+    #banner {
+        width: 100%;
+        height: 25vh;
+    }
+
+    #banner h2{
+        font-size:35px;
+    }
+
+    #banner h4{
+        font-size:13px;
+    }
+
+    #banner button{
+        padding:3px 6px;
+    }
+
+    /* newsletter */
+
+    #newsletter {
+        height: 70px;
+        padding: 10px 50px;
+    }
+
+    #newsletter h4{
+        font-size:15px;
+    }
+
+    #newsletter p{
+        font-size:12px;
+    }
+
+    #newsletter input{
+        height:18px;
+        width:150px;
+        border-radius:3px;
+    }
+
+    #newsletter button{
+        height:18px;
+        width:50px;
+        border-radius:3px;
+        font-size:12px;
+    }
+    /* ------------ shop ------------ */
+
+    #shop-hero{
+        background-image: url("images/shop/img1.jpg");
+        height:30vh;
+        width:100%;
+        text-align:center;
+        padding-top:15px;
+    }
+
+    /* --------- sproduct ----------- */
+
+    #pro-details {
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin-top: 20px;
+        padding:0 2rem 0 5rem;
+    }
+
+    #pro-details .pro-img{
+        width: 70%;
+    }
+
+    #pro-details .detail{
+        width: 85%;
+    }
+
+    #pro-details .detail{
+        align-self: stretch;
+    }
+
+    #product1 .pro-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #product1 .pro-container .pro{
+        flex: 1 1 200px;
+        min-width: 240px;
+        max-width: 250px;
+    }
+
+    /* ------------- contact ------------------ */
+
+    #contact-head{
+        height:30vh;
+    }
+
+    #contact-details{
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+        padding:30px 35px;
+    }
+
+    #contact-details .map {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+}
+
+/* ----------------------- Media query max-width( 730px ) --------------------- */
+
+@media (max-width: 730px){
+
+    #hero h1{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    #hero h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    #hero p{
+        font-size: 12px;
+        line-height: 0px;
+    }
+}
+
+/* ------------------------- media query max-width ( 700px ) --------------- */
+
+@media (max-width: 700px){
+    #about-details{
+        flex-direction: column;
+    }
+}
+
+/* ----------------------- Media query max-width( 640px ) --------------------- */
+
+@media (max-width: 640px){
+
+    #hero{
+        padding: 50px 120px;
+    }
+
+    #hero h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #hero h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    #hero p{
+        font-size: 12px;
+        line-height: 0px;
+    }
+
+    #newsletter{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+    }
+}
+
+/* ----------------------- Media query max-width( 590px ) --------------------- */
+
+@media (max-width: 590px){
+
+    #hero{
+        padding: 50px 110px;
+    }
+
+    #hero h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #hero h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #hero p{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+/* ----------------------- Media query max-width( 470px ) --------------------- */
+
+@media (max-width:470px){
+
+/* ---------------  header --------------- */
+
+    #header{
+        padding:8px 30px;
+    }
+
+/* -------- navbar -------------*/
+
+    #navbar {
+        top:0;
+        right:-300px;
+        height:100vh;
+        width:170px;
+    }
+
+    #menu{
+        margin-left: 20px;
+    }
+
+/* ------------  hero ------------  */
+
+    #hero {
+        height: 70vh;
+        width: 100%;
+        padding:30px 80px;
+    }
+
+    #hero h1{
+        font-size:26px;
+        line-height:30px;
+    }
+
+    #hero h2{
+        font-size:20px;
+        line-height:24px;
+    }
+
+    #hero h4{
+        font-size:12px;
+    }
+
+    #hero p{
+        font-size:10px;
+        margin:5px 0 10px 0;
+    }
+
+    #hero button{
+        height:16px;
+        width:70px;
+        padding:3px 3px 3px 3px;
+        font-size: 10px;
+    }
+
+/* ------------ feature ------------ */
+
+    #feature{
+        padding:10px 5px;
+        justify-content:center;
+    }
+
+    #feature .fe-div{
+        height:100px;
+        width:100px;
+        border:1px solid #cce7d0;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+        box-shadow:20px 20px 34px rgba(0,0,0,0.4);
+        border-radius:4px;
+    }
+
+    #feature img{
+        width:100%;
+        height:70px;
+        padding:4px 4px;
+    }
+
+    #feature .fe-div h6{
+        margin-top:3px;
+        padding:0 3px;
+        border-radius:2px;
+        font-size:11px;
+    }
+
+/* ---------- Product1 ----------- */
+
+    #product1{
+        padding:15px 30px;
+    }
+
+    #product1 h2{
+        font-size:30px;
+        line-height:10px;
+    }
+
+    #product1 p{
+        font-size:14px;
+        line-height:5px;
+    }
+
+    #product1 .pro-container{
+        padding-top:10px;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center
+    }
+
+    #product1 .pro{
+        width:73%;
+        max-width:250px;
+        padding:5px 6px;
+        border-radius:12px;
+        margin:10px 5px;
+    }
+
+    #product1 .pro-container .pro img{
+        width:100%;
+        height:200px;
+        border-radius:10px;
+    }
+
+    #product1 .pro .des{
+        padding:3px 3px;
+    }
+
+    #product1 .pro .des span{
+        font-size:10px;
+    }
+
+    #product1 .pro .des h5{
+        font-size:12px;
+    }
+
+    #product1 .pro .des i{
+        font-size:8px;
+    }
+
+    #product1 .pro .des h4{
+        font-size:13px;
+        padding-top:2px;
+    }
+
+    #product1 .pro .des a i{
+        font-size:15px;
+        bottom:10px;
+        right:15px;
+    }
+
+/* ----- banner -------- */
+
+    #banner{
+        width:100%;
+        height:20vh;
+    }
+
+    #banner h4{
+        font-size:13px;
+        line-height: 25px;
+    }
+
+    #banner h2{
+        font-size:20px;
+        line-height: 20px;
+    }
+
+    #banner button{
+        border-radius:3px;
+        padding:2px 3px;
+        height:20px;
+        width:90px;
+        font-size:12px;
+        margin-top:4px;
+    }
+/* ------------ newsletter ------------ */
+
+    #newsletter{
+        width:100%;
+        height:100px;
+        padding:10px 20px;
+    }
+
+    #newsletter h4{
+        font-size:16px;
+    }
+
+    #newsletter p{
+        font-size:12px;
+        line-height: 5px;
+    }
+
+    #newsletter input{
+        height:18px;
+        width:180px;
+        border-radius:3px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #newsletter button{
+        height:18px;
+        width:60px;
+        border-radius:3px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+/* ------------ footer  ------------*/
+
+    footer{
+        padding:10px 10px;
+    }
+
+    footer .one{
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:flex-start;
+    }
+
+    footer .one .col{
+        margin-bottom:20px;
+    }
+
+    /* ------ sproduct -------- */
+        
+    #pro-details{
+        display:flex;
+        flex-direction:column;
+        margin-top:20px;
+        padding:2rem 2rem 2rem 3rem;
+    }
+
+    #pro-details .pro-img{
+        width:70%;
+        border:1px solid #cce7d0;
+        margin-left:0;
+    }
+
+    #pro-details .pro-img{
+        width:85%;
+    }
+
+    #pro-details .detail{
+        margin-top:10px;
+        padding:5px 2px;
+    }
+
+    #pro-details .detail h4{
+        padding:5px 0 5px 0;
+        font-size:22px;
+    }
+
+    #pro-details .detail h2{
+        font-size:27px;
+        line-height:40px;
+    }
+
+    #pro-details .detail select{
+        display:block;
+        padding:5px 10px;
+        margin-bottom:15px;
+    }
+
+    #pro-details .detail input{
+        width:50px;
+        height:25px;
+        padding-left:10px;
+        font-size:15px;
+        margin-right:3px;
+        border-radius:5px;
+    }
+
+    #pro-details .detail input:focus{
+        outline:none;
+    }
+
+    #pro-details .detail button{
+        height:30px;
+        width:110px;
+        border-radius:5px;
+        background-color:#088178;
+        color:white;
+        border:1px solid black;
+        box-shadow:4px 4px 4px rgba(0,0,0,0.3);
+        margin-bottom:20px;
+    }
+
+    #pro-details .detail span{
+        line-height:18px;
+    }
+
+    #pro-details .detail button:hover{
+        box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+    }
+
+    /* featured products */
+
+    #product1 h2{
+        margin-top:30px;
+    }
+
+/* ----------------- about us ---------------- */
+
+    #about-heading{
+        height:30vh;
+        padding-top:15px;
+    }
+
+    #about-heading h2{
+        font-size:30px;
+        padding-top:2px;
+    }
+
+    #about-heading p{
+        line-height:0px;
+    }
+
+    #about-details{
+        flex-direction:column;
+    }
+
+    #about-details img{
+        width:80%;
+        height:auto;
+    }
+
+    #about-details .abt-detail{
+        padding-left:20px;
+        padding-right:10px;
+    }
+
+    #about-details .abt-detail marquee{
+        margin-top:10px;
+        width:90%;
+    }
+
+    #about-details .abt-detail p{
+        line-height:25px;
+    }
+
+    .about-feature{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-feature .fe-div{
+        min-width: 200px;
+        min-height: 250px;
+    }
+
+    .about-feature .fe-div img{
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    /* ------------- contact ------------ */
+
+    #contact-head h2{
+        font-size:35px;
+    }
+
+    #contact-head h4{
+        font-size:15px;
+    }
+
+    #contact-details p{
+        display:inline-block;
+        padding-left:5px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #contact-details{
+        padding:20px 20px;
+    }
+
+    #contact-details .con-detail h2{
+        font-size:22px;
+        line-height:25px;
+    }
+
+    #contact-details div{
+        margin-bottom:15px;
+    }
+
+    #contact-details .map{
+        padding:20px 20px;
+    }
+
+    #contact-details .map iframe{
+        width:100%;
+        height:300px;
+        border: 0;
+    }
+
+    /* --------- form details ---------- */
+
+    #form-details{
+        padding:20px 15px;
+        margin-top:30px;
+    }
+
+    #form-details form{
+        padding:15px 15px;
+    }
+
+    #form-details form h2{
+        font-size:30px;
+        margin-top:20px;
+        margin-bottom:20px;
+        line-height:30px;
+    }
+
+    #form-details form input{
+        width:90%;
+    }
+
+    #form-details form textarea{
+        height:150px;
+        width:90%;
+        padding:10px 12px;
+    }
+}
+
+/* ----------------------- media query for max-width 400px ------------------------------- */
+
+@media (max-width: 400px){
+    #hero {
+        height: 70vh;
+        width: 100%;
+        padding:50px 30px 30px 120px;
+    }
+
+    #hero h1{
+        font-size:22px;
+        line-height:30px;
+    }
+
+    #hero h2{
+        font-size:18px;
+        line-height:24px;
+    }
+
+    #hero h4{
+        font-size:11px;
+    }
+
+    #hero p{
+        font-size:9px;
+        margin:5px 0 10px 0;
+    }
+
+    #hero button{
+        height:16px;
+        width:60px;
+        padding:3px 3px 3px 3px;
+        font-size: 9px;
+    }
+
+    #feature{
+        flex-direction: column;
+    }
+
+    #feature .fe-div{
+        height:200px;
+        width:200px;
+    }
+
+    #feature img{
+        width:100%;
+        height: 80%;
+        padding:4px 4px;
+    }
+
+    #product1 .pro-container .pro{
+        min-width: 190px;
+        max-width: 200px;
+    }
+
+    #banner{
+        width: 100%;
+        height: 30vh;
+    }
+
+    #contact-head{
+        height: 20vh;
+        padding-top: 14px;
+    }
+
+    #contact-head h2{
+        font-size:30px;
+    }
+
+    #contact-head h4{
+        font-size:13px;
+        margin-top: 0;
+    }
+
+    #contact-details p{
+        display:inline-block;
+        padding-left:5px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #contact-details{
+        padding:20px 5px 20px 10px;
+    }
+
+    #contact-details .con-detail h2{
+        font-size:18px;
+        line-height:20px;
+    }
+
+    #contact-details .head-office{
+        font-size: 17px;
+    }
+
+    #contact-details div{
+        margin-bottom:15px;
+    }
+
+    #contact-details .map{
+        padding:13px 20px;
+        margin-bottom: 5px;
+    }
+
+    #contact-details .map iframe{
+        width:100%;
+        height:250px;
+        border: 0;
+    }
+
+    #form-details{
+        margin-top: 0px;
+    }
+
+    #form-details form h2{
+        font-size: 20px;
+        margin: 7px 0px;
+    }
+
+    #form-details form span{
+        font-size: 13px;
+        margin: 7px 0px;
+    }
+}
+
+/* ----------------------- media query for max-width 330px ------------------------------- */
+
+@media (max-width: 330px){
+
+    #hero {
+        height: 70vh;
+        width: 100%;
+        padding:30px 40px 0 100px;
+    }
+
+    #hero h1{
+        font-size:20px;
+        line-height:25px;
+    }
+
+    #hero h2{
+        font-size:16px;
+        line-height:22px;
+    }
+
+    #hero h4{
+        font-size:10px;
+    }
+
+    #hero p{
+        font-size:8px;
+        margin:5px 0 10px 0;
+    }
+
+    #pro-details{
+        padding: 20px 20px;
+        margin: 0 0;
+    }
+
+    #pro-details .pro-img{
+        width: 80%;
+        margin: 0 0;
+    }
+
+    #pro-details .detail{
+        width: 90%;
+        margin: 0 0;
+    }
+
+    #product1 h2{
+        font-size: 20px;
+    }
+
+    #product1 p{
+        font-size: 13px;
+    }
+
+    #product1 .pro-container .pro{
+        min-width: 170px;
+        max-width: 180px;
+        max-height: 250px;
+    }
+
+    #product1 .pro-container .pro img{
+        width: 100%;
+        height: 140px;
+        border-radius: 10px;
+    }
+
+    #newsletter{
+        height: 120px;
+        padding: 10px 10px;
+    }
+
+    #about-heading h2{
+        font-size:20px;
+        padding-top:2px;
+    }
+
+    #about-heading p{
+        font-size: 10px;
+    }
+
+    #contact-head h2{
+        font-size: 24px;
+    }
+
+    #contact-head h4{
+        font-size: 11px;
+    }
+}
