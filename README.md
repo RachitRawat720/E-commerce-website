@@ -4,7 +4,7 @@ A responsive e-commerce website built using HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
 
-[Visit Shop Pur](shop-pur-e-commerce.vercel.app)
+[Visit Shop Pur](https://shop-pur-e-commerce.vercel.app/)
 
 ## 📖 Project Overview
 
