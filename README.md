@@ -86,7 +86,7 @@ Through this project, I practiced:
 ### 🛍️ About Page
 ![About Page](screenshots/about.png)
 
-### 🛍️ Shop Page
+### 🛍️ Contact Page
 ![Contact Page](screenshots/contact.png)
 
 ### 👕 Product Details
