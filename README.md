@@ -20,13 +20,13 @@ The website includes multiple pages for browsing products, viewing product detai
 - 📱 Responsive design for different screen sizes
 - 📄 Dedicated About and Contact pages
 
-- ## 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 
-- ## 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 E-commerce-website/
@@ -66,7 +66,7 @@ Through this project, I practiced:
 - Organizing a multi-page frontend project
 - Deploying a website using Vercel
 
-- ## 🔮 Future Improvements
+## 🔮 Future Improvements
 
 - Add user authentication
 - Connect the website to a backend and database
@@ -104,7 +104,7 @@ Through this project, I practiced:
 - Improve shopping cart functionality
 - Add an admin dashboard for product management
 
-- ## 👨‍💻 Author
+## 👨‍💻 Author
 
 **Rachit Rawat**
 
